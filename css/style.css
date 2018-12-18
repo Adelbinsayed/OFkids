@@ -1,0 +1,69 @@
+html {
+  background-color: #03AD88; }
+
+html {
+  font-family: lato;
+  font-size: 62.5%; }
+
+.container {
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 80vh repeat(4, min-content); }
+
+.menubar {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  background-color: #F178AD;
+  height: 7.5rem; }
+  .menubar__nav {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: rows; }
+  .menubar__menus {
+    list-style: none;
+    color: #fff;
+    width: 50%;
+    margin-right: auto; }
+  .menubar__menus--left--d {
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 7; }
+  .menubar__menus--left--lin {
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 8; }
+  .menubar__menus--left--su {
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 9;
+    margin-right: 2rem; }
+  .menubar__menus--search {
+    list-style: none;
+    color: #fff;
+    width: 50%;
+    margin-right: auto;
+    grid-column: 2/ 4; }
+  .menubar__logo {
+    width: 12rem;
+    height: 6rem;
+    margin-top: -1.9rem;
+    justify-self: center;
+    align-self: center;
+    grid-column: 5; }
+  .menubar__menu {
+    transition: all .2s; }
+  .menubar__menu:hover {
+    color: #03AD88;
+    cursor: pointer;
+    transform: scale(1.12); }
+  .menubar__menu:active {
+    color: #03AD88;
+    transform: translateY(3px); }
+
+.cards {
+  background-color: #FECB40; }

@@ -1,0 +1,85 @@
+.menubar{
+ font-size: 2rem;
+ padding: 0;
+ margin: 0;
+ background-color: $color-tertiary-1;
+ height: 7.5rem;
+ 
+ 
+ &__nav{
+    display: grid;
+    grid-template-columns:  repeat(9,1fr);
+    grid-template-rows: 1fr;
+   // grid-gap: 2.5rem;
+    grid-auto-flow: rows;
+    
+  
+ }
+ &__menus{
+    list-style: none;
+    color: #fff;
+    width: 50%;
+    margin-right: auto;
+ }
+ &__menus--left--d{
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 7;
+    
+ }
+ &__menus--left--lin{
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 8;
+    
+ }
+ &__menus--left--su{
+    list-style: none;
+    color: #fff;
+    margin-left: auto;
+    grid-column: 9;
+    margin-right: 2rem;
+    
+ }
+ &__menus--search{
+    list-style: none;
+    color: #fff;
+    width: 50%;
+    margin-right: auto;
+    grid-column: 2/ 4;
+ }
+ 
+    &__logo{
+    width: 12rem;
+    height: 6rem;
+    margin-top: -1.9rem;
+    justify-self: center;
+    align-self: center;
+    grid-column: 5;
+ }
+
+ &__menu{
+
+    transition: all .2s;
+ }
+ &__menu:hover{
+
+    color: $color-primary-1;
+    cursor: pointer;
+    transform: scale(1.12);
+    
+
+
+ }
+ &__menu:active{
+
+    color: $color-primary-1;
+    transform: translateY(3px);
+    
+
+
+ }
+
+}

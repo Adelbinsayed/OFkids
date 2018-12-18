@@ -1,0 +1,13 @@
+html{
+  font-family: lato;
+  font-size: 62.5% ;
+}
+.container{
+ margin: 0;
+ display: grid;
+ grid-template-rows: min-content 80vh repeat(4, min-content);
+ 
+
+
+
+}
