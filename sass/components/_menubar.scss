@@ -2,10 +2,13 @@
  font-size: 2rem;
  padding: 0;
  margin: 0;
- background-color: $color-tertiary-1;
- height: 7.5rem;
  
+ height: 6.35rem;
+ grid-row: 1/2 ;
+ grid-column: 1/-1 ;
+ z-index: 500;
  
+
  &__nav{
     display: grid;
     grid-template-columns:  repeat(9,1fr);
@@ -21,6 +24,13 @@
     width: 50%;
     margin-right: auto;
  }
+ &__menus--catagories{
+   list-style: none;
+   color: #fff;
+   width: 50% ;  
+   margin-right: auto;
+   
+ }
  &__menus--left--d{
     list-style: none;
     color: #fff;
@@ -30,14 +40,14 @@
  }
  &__menus--left--lin{
     list-style: none;
-    color: #fff;
+    color: $color-font-light;
     margin-left: auto;
     grid-column: 8;
     
  }
  &__menus--left--su{
     list-style: none;
-    color: #fff;
+    color:$color-font-light;
     margin-left: auto;
     grid-column: 9;
     margin-right: 2rem;
@@ -45,7 +55,7 @@
  }
  &__menus--search{
     list-style: none;
-    color: #fff;
+    color: $color-font-light;
     width: 50%;
     margin-right: auto;
     grid-column: 2/ 4;
@@ -66,7 +76,7 @@
  }
  &__menu:hover{
 
-    color: $color-primary-1;
+    color: $color-font-1;
     cursor: pointer;
     transform: scale(1.12);
     
@@ -75,7 +85,7 @@
  }
  &__menu:active{
 
-    color: $color-primary-1;
+   color: $color-font-1;
     transform: translateY(3px);
     
 
