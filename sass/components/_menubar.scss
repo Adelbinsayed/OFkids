@@ -114,6 +114,7 @@ grid-column: 1/1;
 &__icon
 {
 height: 2rem;
+fill: rgb(61, 59, 59);
 width: 2rem;
 grid-row: 1/1;
 grid-column: 1/1;
@@ -121,11 +122,22 @@ align-self: end;
 justify-self: end;
 padding-right: 0.5rem;
 //background-color: rgba(231, 231, 218, 0.418);
+  
+}
+&__icon:hover
+  {
+   fill: rgb(16, 139, 98);
+
+  }
+  &__icon:active
+  {
+   fill: $color-primary-1;
+   
+   
+  }
 
 }
-
-}
-.searchicon:hover
+.search__container:hover
 {
    width: 100%;
    margin-top: 0.35rem;
@@ -138,28 +150,18 @@ transform: scaleY(1.2)  scaleX(1.3);
 padding: 0.2rem;
 padding-left: 0.5rem;
 }
-.searchicon:focus-within
+.search__container:focus-within 
 {
  margin-top: 0.35rem;
 box-sizing: border-box;
 border-radius: 35px;
-//border: 2px solid $color-primary-1;
-//background-color: rgba(231, 231, 218, 0.418);
 transform:  scaleY(1.2) scaleX(1.3);
 padding: 0.2rem;
 padding-left: 0.5rem;
+margin-right: 10px;
 }
-/*.search:focus .searchicon
-{
-   background-color: red;
-box-sizing: border-box;
-border-radius: 35px;
-border: 2px solid $color-primary-1;
-background-color: rgba(231, 231, 218, 0.418);
-transform:  scaleY(1.2) scaleX(1.3);
 
-}*/
-.searchicon
+.search__container
 {
  width: 90%;
 display: grid;
