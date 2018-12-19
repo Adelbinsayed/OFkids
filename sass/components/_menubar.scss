@@ -54,6 +54,7 @@
     
  }
  &__menus--search{
+    box-sizing: border-box;
     list-style: none;
     color: $color-font-light;
     width: 50%;
@@ -74,16 +75,13 @@
 
     transition: all .2s;
  }
- &__menu:hover{
+ &__menu:not(.menubar__menus--search):hover {
 
     color: $color-font-1;
     cursor: pointer;
     transform: scale(1.12);
-    
-
-
- }
- &__menu:active{
+     }
+ &__menu:not(.menubar__menus--search):active{
 
    color: $color-font-1;
     transform: translateY(3px);
@@ -91,5 +89,90 @@
 
 
  }
+
+ .search
+{
+box-sizing: border-box;
+border-radius: 100px;
+outline: none;
+background-color: rgba(231, 231, 218, 0.418);
+border: none;
+//transform: scaleY(1.2);
+padding: 0.2rem;
+padding-left: 0.5rem;
+transition: all 0.2s;
+color: rgb(44, 43, 41);
+grid-row: 1/1;
+grid-column: 1/1;
+
+&__container
+{
+
+
+}
+
+&__icon
+{
+height: 2rem;
+width: 2rem;
+grid-row: 1/1;
+grid-column: 1/1;
+align-self: end;
+justify-self: end;
+padding-right: 0.5rem;
+//background-color: rgba(231, 231, 218, 0.418);
+
+}
+
+}
+.searchicon:hover
+{
+   width: 100%;
+   margin-top: 0.35rem;
+box-sizing: border-box;
+border-radius: 35px;
+outline: none;
+//background-color: rgba(231, 231, 218, 0.418);
+//border: none;
+transform: scaleY(1.2)  scaleX(1.3);
+padding: 0.2rem;
+padding-left: 0.5rem;
+}
+.searchicon:focus-within
+{
+ margin-top: 0.35rem;
+box-sizing: border-box;
+border-radius: 35px;
+//border: 2px solid $color-primary-1;
+//background-color: rgba(231, 231, 218, 0.418);
+transform:  scaleY(1.2) scaleX(1.3);
+padding: 0.2rem;
+padding-left: 0.5rem;
+}
+/*.search:focus .searchicon
+{
+   background-color: red;
+box-sizing: border-box;
+border-radius: 35px;
+border: 2px solid $color-primary-1;
+background-color: rgba(231, 231, 218, 0.418);
+transform:  scaleY(1.2) scaleX(1.3);
+
+}*/
+.searchicon
+{
+ width: 90%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-self: center;
+align-self: center;
+transition: all 0.2s;
+margin-top: 0.5rem;
+transform:  scaleY(1.2) ;
+
+//background-color: rgba(231, 231, 218, 0.418);
+
+
+}
 
 }
