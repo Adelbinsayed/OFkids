@@ -9,7 +9,7 @@ padding-left: 7.5rem;
 &__link
 {
 text-decoration: none;
-color: aliceblue;
+color: rgb(220, 226, 231);
 display: block;
 transition: all 0.2s;
   
@@ -29,11 +29,11 @@ transition: all 0.2s;
 }
 .catagories__container
 {
-/*background-image: linear-gradient(to  bottom ,rgba($color-secondary-1, .5), rgba($color-primary-1, .5)) ;*/
-background-color: white;
+background-image: linear-gradient(to  bottom ,rgba($color-secondary-1, .5), rgba($color-primary-1, .5)) ;
+
 
 font-size: 2.5rem ;
-&--difficulty
+/*&--difficulty
 {
 display: grid;
 grid-gap: 4rem;
@@ -42,27 +42,20 @@ padding-top: 5rem;
 padding-bottom: 7rem;
 
 
-}
+}*/
 &--difficulty
 {
+color: $color-secondary-1;
+grid-template-columns: repeat(4,1fr);
 display: grid;
 grid-auto-flow: row;
 grid-gap: 10rem;
+padding-top: 5rem;
+padding-bottom: 7rem;
 padding-left: 9rem;
 padding-right: 10rem;
-
-
-&--1,
-&--2,
-&--3
-{
-display: grid;
-grid-auto-flow: column;
 align-items: center;
-justify-items: center;
-
-}
-
+justify-items: center ;
 }
 
 }
