@@ -48,3 +48,53 @@
         opacity: 0 ;
 
     }
+
+    
+    
+    .intermediate--button
+
+    
+    {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    line-height: 13rem;
+    width: 100%;
+    border-radius: 10000px;
+    padding: 0 .5rem ;
+    background-color: $color-tertiary-1;
+
+   }
+    .begineer--button
+     {
+        display: block;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        text-decoration: none;
+        line-height: 11rem;
+        width: 100%;
+        border-radius: 10000px;
+        padding: 0 2.5px;
+        background-color: $color-tertiary-1;
+
+    }
+    .advanced--button
+    {
+        display: block;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        text-decoration: none;
+        line-height: 12rem;
+        width: 100%;
+        border-radius: 10000px;
+        padding: 0 2.5px;
+        background-color: $color-tertiary-1;
+
+ 
+    }
+    
