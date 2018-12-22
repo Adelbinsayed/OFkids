@@ -1,9 +1,28 @@
 html {
   background-color: #03AD88; }
 
+/*
+grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+
+
+
+*/
 html {
   font-family: lato;
   font-size: 62.5%; }
+  @media only screen and (max-width: 1100px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 950px) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 762px) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 762px) {
+    html {
+      font-size: 25%; } }
 
 .container {
   margin: 0;
@@ -129,20 +148,29 @@ html {
   background-color: white; }
   .card__container {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(4, 27rem);
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(32rem, min-content));
     padding: 7rem 0;
     padding-bottom: 13rem;
     align-content: center;
     justify-content: center;
-    grid-gap: 3rem; }
+    grid-gap: 1.5rem; }
+    @media only screen and (max-width: 825px) {
+      .card__container {
+        grid-template-columns: repeat(auto-fill, minmax(49rem, min-content)); } }
+    @media only screen and (max-width: 400px) {
+      .card__container {
+        grid-template-columns: repeat(auto-fill, minmax(51rem, min-content)); } }
     .card__container--1, .card__container--2, .card__container--3, .card__container--4 {
+      display: grid;
       align-self: center;
       justify-self: center;
-      box-shadow: 0px 4px 23px -1px rgba(0, 0, 0, 0.61); }
+      box-shadow: 0px 4px 23px -1px rgba(0, 0, 0, 0.61);
+      width: 80%; }
+    .card__container--1 {
+      grid-column: 1/2; }
     .card__container--image--insider {
-      width: 27rem;
-      height: 17rem; }
+      width: 100%; }
     .card__container--name {
       font-size: 1.75rem;
       font-weight: 400;
@@ -153,7 +181,7 @@ html {
       width: 100%; }
     .card__container--enroll--link {
       display: block;
-      font-size: 2.75rem;
+      font-size: 2rem;
       background-color: #03AD88;
       padding: 1rem;
       font-weight: 500;
@@ -205,6 +233,9 @@ html {
     padding-right: 10rem;
     align-items: center;
     justify-items: center; }
+    @media only screen and (max-width: 400px) {
+      .catagories__container--difficulty {
+        grid-gap: 3rem; } }
   .catagories__container--subject {
     font-weight: 800; }
 
@@ -213,7 +244,7 @@ html {
   z-index: 500;
   background-color: white; }
   .parents__image {
-    width: 100%;
+    width: 100vw;
     height: 100%; }
 
 .welcome {
