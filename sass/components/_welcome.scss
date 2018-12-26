@@ -3,7 +3,7 @@
     grid-column: 1/-1 ;
     background-image: linear-gradient(to right bottom ,rgba($color-primary-1, .93), rgba($color-secondary-1, .93)), url(../../img/content-small.jpg);
     background-size: cover;
-   
+    width: 100vw ;
     z-index: 5;
     
     &__text

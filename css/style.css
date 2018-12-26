@@ -15,6 +15,9 @@ html {
 @-ms-viewport {
   html {
     width: device-width; } }
+  html html, html body {
+    max-width: 100vw;
+    overflow-x: hidden; }
   @media only screen and (max-width: 1100px) {
     html {
       font-size: 50%; } }
@@ -40,7 +43,8 @@ html {
   height: 6.35rem;
   grid-row: 1/2;
   grid-column: 1/-1;
-  z-index: 500; }
+  z-index: 500;
+  width: 100vw; }
   .menubar__nav {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -60,18 +64,21 @@ html {
     list-style: none;
     color: #fff;
     margin-left: auto;
-    grid-column: 7; }
+    grid-column: 7;
+    margin: auto; }
   .menubar__menus--left--lin {
     list-style: none;
     color: #e9e0e0;
     margin-left: auto;
-    grid-column: 8; }
+    grid-column: 8;
+    margin: auto; }
   .menubar__menus--left--su {
     list-style: none;
     color: #e9e0e0;
-    margin-left: auto;
+    margin-left: 0;
     grid-column: 9;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    margin: auto; }
   .menubar__menus--search {
     box-sizing: border-box;
     list-style: none;
@@ -349,7 +356,8 @@ html {
     transition: all 0.2s; } }
 
 .card {
-  background-color: white; }
+  background-color: white;
+  width: 100vw; }
   .card__container {
     display: grid;
     grid-auto-flow: row;
@@ -406,6 +414,7 @@ html {
 
 .catagories {
   display: grid;
+  width: 97vw;
   grid-auto-flow: column;
   font-size: 2.5rem;
   padding-top: 3.5rem;
@@ -454,8 +463,9 @@ html {
 .welcome {
   grid-row: 1/3;
   grid-column: 1/-1;
-  background-image: linear-gradient(to right bottom, rgba(3, 173, 136, 0.93), rgba(254, 203, 64, 0.93)), url(../img/content-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(3, 173, 136, 0.93), rgba(254, 203, 64, 0.93)), url(../../img/content-small.jpg);
   background-size: cover;
+  width: 100vw;
   z-index: 5; }
   .welcome__text {
     text-align: center;
@@ -538,7 +548,7 @@ html {
     align-self: end;
     justify-self: end;
     font-size: 1.5rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
     margin-bottom: 2rem; }
 
 @keyframes moveinright {
