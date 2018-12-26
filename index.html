@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Opportunities For Kids
     </title>
     <link rel="stylesheet" href="css/style.css">
@@ -9,10 +10,18 @@
     
     </head>
     <body class="container">
+            <div class="nav__menu">
+                    <div class="nav__placeholder">
+                         <a href="#" onclick="openNav()" ondblclick="closeNav()" class="nav__mobile--link"> &#9776;</a>   
+                    </div>
+            
+                </div>
         <div class="menubar">
             <nav class="">
-                <ul class="menubar__nav">
+                <ul class="menubar__nav responsive__nav">
+                            
             <li class="menubar__menus--catagories menubar__menu">catagories</li>
+            <div class="closebtn--container"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div> 
             <li class="menubar__menus--search  menubar__menu">
             <div class="search__container">    
                 <input type="" class="search" placeholder="search">
@@ -22,7 +31,7 @@
                     </svg> </a>
             </div>
             </li>
-            <img src="img/shortcut.png" alt="" class="menubar__logo menubar__menus">
+           
             <li class="menubar__menu menubar__menus--left--d">Donate</li>
             <li class=" menubar__menu menubar__menus--left--lin ">Log in</li>
             <li class="menubar__menu menubar__menus--left--su">Sign up</li>
@@ -34,6 +43,7 @@
         </div>
         <div class="welcome">
             <div class="welcome__text">
+                <img src="img/shortcut.png" alt="" class="menubar__logo menubar__menus">
                 <h1 class="welcome__h1">You can learn anything </h1>
                 <h4 class="welcome__h4">For free, For everyone, Forever</h4>
             </div > 
@@ -52,7 +62,7 @@
             <div class="catagories_menus"><a href="" class="catagories__link"> Crafts</a></div>
             <div class="catagories_menus"><a href="" class="catagories__link"> Digital paint</a></div>
             <div class="catagories_menus"><a href="" class="catagories__link">Programming</a></div>
-            <div class="catagories_menus"><a href="" class="catagories__link"> Science</a></div>
+           
         </div>
         <div class="catagories__container--difficulty">
             
@@ -132,4 +142,6 @@
            </div>
            <div class="footer__copyright"> &copy; Adel Mohd. Sayed</div>
         </div>
+        <script src="script.js">
+        </script>
     </body>
