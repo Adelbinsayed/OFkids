@@ -229,6 +229,7 @@ html {
       grid-gap: 1rem;
       font-size: 3.5rem;
       font-weight: 600;
+			overflow : hidden ; 
       position: fixed; }
     .menubar__menus--catagories {
       list-style: none;
