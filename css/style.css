@@ -191,7 +191,7 @@ html {
   font-size: 25px;
   list-style: none;
  margin-right: -15rem;
-	;
+	
 }
 
 /*************************************************Media queries*****************************/
@@ -292,7 +292,7 @@ html {
     align-self: flex-end;
     justify-self: end;
     margin-right: -15rem; 
-	;
+	
 	}
   .closebtn {
     text-decoration: none;
@@ -304,7 +304,7 @@ html {
     align-self: flex-end;
     justify-self: end; 
 	 margin-right: -15rem;
-	  ;
+	  
 	}
   .search {
     box-sizing: border-box;
