@@ -180,7 +180,8 @@ html {
   grid-column: 1;
   grid-row: 1;
   list-style: none;
- margin-right: -15rem;}
+ margin-right: -15rem;
+transform: translateX(20px);}
 
 .closebtn--container {
   text-decoration: none;
@@ -190,6 +191,7 @@ html {
   font-size: 25px;
   list-style: none;
  margin-right: -15rem;
+	transform: translateX(20px);
 }
 
 /*************************************************Media queries*****************************/
@@ -289,7 +291,9 @@ html {
     list-style: none;
     align-self: flex-end;
     justify-self: end;
-    margin-right: -15rem; }
+    margin-right: -15rem; 
+	transform: translateX(20px);
+	}
   .closebtn {
     text-decoration: none;
     display: block;
@@ -300,6 +304,7 @@ html {
     align-self: flex-end;
     justify-self: end; 
 	 margin-right: -15rem;
+	  transform: translateX(20px);
 	}
   .search {
     box-sizing: border-box;
