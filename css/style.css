@@ -226,7 +226,7 @@ html {
       border: 2px solid rgba(255, 255, 255, 0.616);
       border-radius: 5px;
       transition: all 0.5s;
-      width: 38rem;
+      width: 50rem;
       align-items: flex-start;
       justify-items: start;
       margin-left: -25px;
@@ -367,10 +367,10 @@ html {
     align-content: center;
     justify-content: center;
     grid-gap: 1.5rem; }
-    @media only screen and (max-width: 825px) {
+    @media only screen and (max-width: 51.5em) {
       .card__container {
         grid-template-columns: repeat(auto-fill, minmax(49rem, min-content)); } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 25.15em) {
       .card__container {
         grid-template-columns: repeat(auto-fill, minmax(51rem, min-content)); } }
     .card__container--1, .card__container--2, .card__container--3, .card__container--4 {
@@ -414,11 +414,11 @@ html {
 
 .catagories {
   display: grid;
-  width: 97vw;
   grid-auto-flow: column;
   font-size: 2.5rem;
   padding-top: 3.5rem;
-  padding-left: 7.5rem; }
+  padding-left: 7.5rem;
+  width: 100vw; }
   .catagories__link {
     text-decoration: none;
     color: #dce2e7;
@@ -433,7 +433,8 @@ html {
 
 .catagories__container {
   background-image: linear-gradient(to bottom, rgba(254, 203, 64, 0.5), rgba(3, 173, 136, 0.5));
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  width: 100vw; }
   .catagories__container--difficulty {
     color: #FECB40;
     grid-template-columns: repeat(4, 1fr);
@@ -454,9 +455,10 @@ html {
 
 .parents {
   background-size: 100vh;
-  background-color: white; }
+  background-color: white;
+  width: 100vw; }
   .parents__image {
-    width: 98vw;
+    width: 100vw;
     height: 100%;
     margin-left: 10px; }
 

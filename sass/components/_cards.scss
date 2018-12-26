@@ -13,11 +13,12 @@ padding-bottom: 13rem;
 align-content: center;
 justify-content: center;
 grid-gap: 1.5rem;
-@media only screen  and (max-width : 825px) {
+
+@media only screen  and (max-width : 51.5em) {
     grid-template-columns: repeat(auto-fill, minmax(49rem, min-content))  ;
    
 }
-@media only screen  and (max-width : 400px) {
+@media only screen  and (max-width : 25.15em) {
     grid-template-columns: repeat(auto-fill, minmax(51rem, min-content))  ;
    
   }
