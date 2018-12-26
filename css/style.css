@@ -181,7 +181,7 @@ html {
   grid-row: 1;
   list-style: none;
  margin-right: -15rem;
-transform: translateX(20px);}
+}
 
 .closebtn--container {
   text-decoration: none;
@@ -191,7 +191,7 @@ transform: translateX(20px);}
   font-size: 25px;
   list-style: none;
  margin-right: -15rem;
-	transform: translateX(20px);
+	;
 }
 
 /*************************************************Media queries*****************************/
@@ -292,7 +292,7 @@ transform: translateX(20px);}
     align-self: flex-end;
     justify-self: end;
     margin-right: -15rem; 
-	transform: translateX(20px);
+	;
 	}
   .closebtn {
     text-decoration: none;
@@ -304,7 +304,7 @@ transform: translateX(20px);}
     align-self: flex-end;
     justify-self: end; 
 	 margin-right: -15rem;
-	  transform: translateX(20px);
+	  ;
 	}
   .search {
     box-sizing: border-box;
