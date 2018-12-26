@@ -179,7 +179,8 @@ html {
   display: none;
   grid-column: 1;
   grid-row: 1;
-  list-style: none; }
+  list-style: none;
+ margin-right: -15rem;}
 
 .closebtn--container {
   text-decoration: none;
@@ -187,7 +188,9 @@ html {
   grid-column: 1/1;
   grid-row: 1/1;
   font-size: 25px;
-  list-style: none; }
+  list-style: none;
+ margin-right: -15rem;
+}
 
 /*************************************************Media queries*****************************/
 @-ms-viewport {
