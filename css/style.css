@@ -286,7 +286,7 @@ html {
     list-style: none;
     align-self: flex-end;
     justify-self: end;
-    margin-right: -5.5rem; }
+    margin-right: -15rem; }
   .closebtn {
     text-decoration: none;
     display: block;
@@ -295,7 +295,9 @@ html {
     color: #333232;
     list-style: none;
     align-self: flex-end;
-    justify-self: end; }
+    justify-self: end; 
+	 margin-right: -15rem;
+	}
   .search {
     box-sizing: border-box;
     border-radius: 100px;
