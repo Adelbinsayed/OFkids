@@ -219,6 +219,7 @@ html {
     .menubar .responsive__nav {
       display: grid;
       opacity: 0;
+      visibility: hidden;
       grid-template-columns: 25rem 1fr;
       grid-template-rows: repeat(9, 1fr);
       grid-auto-flow: rows;
