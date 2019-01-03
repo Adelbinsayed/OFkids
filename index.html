@@ -34,7 +34,7 @@
            
             <li class="menubar__menu menubar__menus--left--d" id="nav__responsive">Donate</li>
             <li class=" menubar__menu menubar__menus--left--lin " id="nav__responsive">Log in</li>
-            <li class="menubar__menu menubar__menus--left--su" id="nav__responsive"> Sign up</li>
+            <li class="menubar__menu menubar__menus--left--su" id="nav__responsive"> <a href="#signup" class="menubar__signup" onclick="openSignup()" >Sign up</a> </li>
                         
                 </ul>
                 </nav>
@@ -142,6 +142,25 @@
            </div>
            <div class="footer__copyright"> &copy; Adel Mohd. Sayed</div>
         </div>
+        <div class="signup" id="signup">
+            <div class="signup__closebutton" onclick="closeSignup()"><a href="" class="signup__closebutton--link">X</a></div>
+            <div class="signup__box">
+                    <h1 class="signup__heading">Sign UP !!</h1>
+                <form action="" class="signup__form">
+                    <input type="text" class="signup__name" placeholder="Full Name" >
+                    <input type="email" class="signup__email" placeholder="E-mail" >
+                    <input type="password" class="signup__password" placeholder="password">
+                     
+                      <a href="#home" class="signup__link  signup__button" >Sign Up</a>
+                   
+                     <a href="#home" class="signup__button-later signup__button-exit">May be Later</a>
+                </form>
+            </div>
+            
+            </div>
+
+
         <script src="script.js">
         </script>
+
     </body>

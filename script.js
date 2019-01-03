@@ -18,3 +18,16 @@ document.getElementById('nav__responsive').style.visibility = 'hidden' ;
 
 
 }
+function closeSignup()
+{
+document.querySelector('.signup').style.visibility = 'hidden' ;
+document.querySelector('.signup').style.opacity = '0' ; 
+
+}
+function openSignup()
+{
+document.querySelector('.signup').style.visibility = 'visible' ;
+document.querySelector('.signup').style.opacity = '1' ; 
+//document.querySelector('.menubar').style.filter = 'blur(15px)' ;
+
+}
