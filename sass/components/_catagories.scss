@@ -150,6 +150,16 @@ font-weight: 800;
 {
     cursor: pointer;
    transform: scale(1.65) rotate(10deg) ;
+    transition: ease-out 0.35s ;
+    
+
+}
+.difficulties__image--1:active,
+.difficulties__image--2:active,
+.difficulties__image--3:active
+{
+    cursor: pointer;
+   transform: scale(1.25) rotate(10deg) ;
     
     
 
