@@ -1,4 +1,4 @@
-.catagories
+/*.catagories
 {
 display: grid;
 //width: 97vw;
@@ -61,4 +61,110 @@ font-weight: 800;
 
 }
 
+}*/ 
+.catagories
+{
+    &__container--card
+{
+   // margin : 2.5rem 0;
+    margin-left: 1rem ;
+   display: grid ;
+   grid-template-rows: 20rem 5.5rem;
+   //grid-template-columns: repeat(3, 1fr) ;
+   grid-auto-flow: row ;
+   border-radius: 4.5px;
+   //overflow: hidden;
+   box-shadow: 0px 4px 23px -1px rgba(0,0,0,0.61) ;
+   transition: all 0.2s; 
+      &:hover
+      {
+        transform: translateY(-0.5rem);
+        cursor: pointer; 
+
+      }
+   
+   
+   &--top
+   { 
+        overflow: hidden ;
+   }
+   &--bottom
+   {
+ display: grid ;
+ grid-auto-flow: column;
+ width: 100% ;
+ grid-template-columns: repeat(3,1fr);
+ background-color: $color-primary-1;
+ align-content: center ;
+ justify-content: center ;
+ 
+
+ 
+
+
+
+   }
+   
+}  
+
+&__image
+{
+    height: 20rem;
+    width: 25rem;
+    //overflow: hidden;
 }
+&__container 
+{
+    background-color: white;
+    
+}
+&__difficulty--1,
+&__difficulty--2,
+&__difficulty--3
+{
+    justify-self: center;
+    text-align: center;
+    
+
+}
+
+
+}
+.difficulties__image--1,
+.difficulties__image--2,
+.difficulties__image--3
+{
+    height: 4.5rem ;
+    width: 6.5rem ;
+    transition: 0.2s;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    
+
+}
+
+.difficulties__image--1:hover,
+.difficulties__image--2:hover,
+.difficulties__image--3:hover
+{
+    cursor: pointer;
+   transform: scale(1.65) rotate(10deg) ;
+    
+    
+
+}
+.catagoriesPage__container
+{
+    background-color: white;
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, min-content))  ;
+    grid-gap: 1.5rem;
+   //grid-auto-flow: column ;
+   align-content: center ;
+   justify-content: center ;
+   border-radius: 50px ;
+   padding: 2.5rem 0;
+   
+}     

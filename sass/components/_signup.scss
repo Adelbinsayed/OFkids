@@ -69,7 +69,7 @@ position: absolute;
 top: 0.7rem;
 right: 1.5rem;
 font-size: 3rem;
-border: 2px solid white;
+//border: 2px solid white;
 height: 3.4rem;
 width: 3.4rem;
 border-radius: 100px;
@@ -77,8 +77,11 @@ text-align: center;
     &--link{
         display: block;
         text-decoration: none;
-        color: rgb(214, 213, 213)  ;
+        color: rgba(214, 213, 213, 0.795)  ;
         transition: all 0.2s ;
+        background-color: rgba(32, 31, 31, 0.445);
+        border-radius: 100px;
+  
         
         &:hover
         {
@@ -92,7 +95,18 @@ text-align: center;
     list-style: none;
       text-decoration: none;
       color: black;
+      background-color: rgb(32, 31, 31);
+      border-radius: 100px;
+   &:hover{
+    background-color: lighten($color-primary-1, 5%);
+   }
+   &:active
+   {
+      // transform: scale(0.9);
+       //box-shadow: 0px 4px 23px -1px rgba(0,0,0,0.61) ;
+       background-color: darken($color-primary-1, 7%);
 
+   }
 }
 &__button{
 

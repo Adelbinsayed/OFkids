@@ -50,7 +50,7 @@
     }
 
     
-    
+   /* 
     .intermediate--button
 
     
@@ -134,10 +134,10 @@
         z-index: -2;
         -webkit-transition: all .4s;
         transition: all .4s; 
-        background-color: /*$color-font-light*/ rgb(233, 55, 180) ;
+        background-color: /*$color-font-light*/ /* rgb(233, 55, 180) ;
       
 
-    }
+    }/*
     .begineer--button:hover::after,
     .intermediate--button:hover::after,
     .advanced--button:hover::after
@@ -146,4 +146,5 @@
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0 ;
 
-    }
+     }
+*/

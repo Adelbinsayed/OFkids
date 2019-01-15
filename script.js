@@ -31,3 +31,14 @@ document.querySelector('.signup').style.opacity = '1' ;
 //document.querySelector('.menubar').style.filter = 'blur(15px)' ;
 
 }
+document.addEventListener('keypress',function(event)
+    {
+     
+        if (event.keyCode === 27|| Event.which ===27)
+        closeSignup()
+        
+        
+    })
+    
+
+   
