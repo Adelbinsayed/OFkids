@@ -34,11 +34,24 @@ document.querySelector('.signup').style.opacity = '1' ;
 document.addEventListener('keypress',function(event)
     {
      
-        if (event.keyCode === 27|| Event.which ===27)
-        closeSignup()
-        
+        if (event.keyCode === 27 || Event.which ===27)
+        {
+            closeSignup() ;
+            console.log('ecs is pressed');
+        }
+       
         
     })
-    
+    document.addEventListener('keydown',function(event)
+    {
+     
+        if (event.keyCode === 27 || Event.which ===27)
+        {
+            closeSignup() ;
+            console.log('ecs is pressed');
+        }
+       
+        
+    })
 
    
