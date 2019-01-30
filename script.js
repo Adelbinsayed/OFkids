@@ -53,5 +53,14 @@ document.addEventListener('keypress',function(event)
        
         
     })
+               /************* changing menubar color when it is scrolled **************/
+    window.onscroll = () => {
+        const nav = document.querySelector('#navbar');
+        if(this.scrollY <= 10) nav.classList.remove("nav__scrolled");
+        else if(this.scrollY >= 10)
+        nav.classList.add("nav__scrolled");
 
+        
+      };
+      
    
