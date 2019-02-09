@@ -63,4 +63,19 @@ document.addEventListener('keypress',function(event)
         
       };
       
+
+                                     /******** Card SLider ********/
+
+                                    
+             $(document).ready(function(){
+             $('.card__container').slick({
+             
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            infinite: true,                
+            focusOnSelect: true
+            });
+        });                      
    

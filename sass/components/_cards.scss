@@ -8,8 +8,8 @@ width: 100vw ;
 display: grid;
 grid-auto-flow: row;
 grid-template-columns: repeat(auto-fill, minmax(32rem, min-content))  ;
-padding: 7rem 0 ;
-padding-bottom: 13rem;
+padding-top: 7rem  ;
+padding-bottom: 3.5rem ;
 align-content: center;
 justify-content: center;
 grid-gap: 1.5rem;
@@ -33,14 +33,14 @@ grid-gap: 1.5rem;
     justify-self: center;
     box-shadow: 0px 4px 23px -1px rgba(0,0,0,0.61);
    width: 80% ;
-
+    margin-left: 10px;
 
 }
-&--1
-{
-grid-column: 1/2;
+// &--1
+// {
+// grid-column: 1/2 ;
     
-}
+//}
 &--image--insider
 {
 
