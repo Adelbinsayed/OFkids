@@ -71,10 +71,10 @@ document.addEventListener('keypress',function(event)
              $('.card__container').slick({
              
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 2 ,
             dots: true,
-            arrows: false,
-            infinite: true,                
+            arrows: true,
+            //infinite: true,                
             focusOnSelect: true
             });
         });                      

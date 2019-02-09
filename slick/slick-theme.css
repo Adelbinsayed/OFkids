@@ -44,13 +44,14 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 50000;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: white;
     outline: none;
     background: transparent;
 }
@@ -64,18 +65,20 @@
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .25;
+    opacity: 1;
 }
 
 .slick-prev:before,
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 5rem;
     line-height: 1;
-
-    opacity: .75;
-    color: white;
+    z-index: 909999999;
+    opacity: 1;
+    color:rgb(255, 255, 255);
+    /* margin-left: 5px; */
+    /* background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png); */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -83,7 +86,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    /* left: -25px; */
 }
 [dir='rtl'] .slick-prev
 {
@@ -92,7 +95,10 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    /* content: '←'; */
+    content: '<';
+    background-color: rgba(29, 28, 28, 0.87);
+    
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -101,7 +107,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 1.8rem;
 }
 [dir='rtl'] .slick-next
 {
@@ -110,11 +116,18 @@
 }
 .slick-next:before
 {
-    content: '→';
+    /* content: '→'; "\f18e" */
+    content: '>';
+    background-color:  rgba(29, 28, 28, 0.87);
+    
+    /* border-radius: 50px; */
+    
+}
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    
 }
 
 /* Dots */
@@ -206,3 +219,5 @@
     opacity: .75;
     color: black;
 }
+
+   
