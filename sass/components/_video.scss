@@ -1,0 +1,45 @@
+.footer__video {
+   // position: fixed;
+    bottom: 0;
+    width: 100%;
+ 
+}
+.video__link{
+    padding-top: 10rem ;
+    margin-left: 4rem;
+    //margin-bottom: 10rem;
+    // width: 50rem;
+    // height: 29rem;
+   
+}
+.video__course
+{
+    &--name{
+        font-size: 2.5rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 700;
+    padding-top: 5rem;
+    }
+    
+    &--trainer{
+        font-size: 1.5rem;
+        color:white;
+        margin-left: 4rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+    
+    &--catagories{
+        font-size: 1.5rem;
+        color:white;
+        margin-left: 4rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+}
+.video__container{
+    padding-bottom: 5rem;
+    background-color: rgb(121, 115, 115);
+}
