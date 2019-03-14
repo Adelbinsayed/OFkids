@@ -4,14 +4,86 @@
     width: 100%;
  
 }
-.video__link{
-    padding-top: 10rem ;
-    margin-left: 4rem;
-    //margin-bottom: 10rem;
-    // width: 50rem;
-    // height: 29rem;
-   
+.video{
+    &__link{
+        padding-top: 10rem ;
+        margin-left: 4rem;
+        //margin-bottom: 10rem;
+        // width: 50rem;
+        // height: 29rem;
+       
+    }
+
+    &__grid{
+        display: grid; 
+        grid-template-columns:  50%;
+        grid-auto-flow: column;
+    }
+    &__details{
+        background-color: rgb(121, 115, 115)  ;
+        padding-top: 10rem; 
+        
+         &--link{
+            // display: grid;
+             font-size: 2rem; 
+            // grid-gap: 1.2rem; 
+             //border: 0.5px solid grey; 
+             margin-right: 2rem; 
+             align-self: start;
+             justify-self: start;  
+
+         }
+         &--thumb{
+            height: 80px;
+            border-radius: 4px;
+         }
+         &--rapper{
+             display: grid;
+             grid-auto-flow: column;
+             grid-gap: 1rem;
+             padding: 1rem;
+             margin: 1rem;
+             align-items: start;
+             justify-items: start;  
+             grid-template-columns: min-content;
+           
+             transition: all 0.2s;
+              
+               &:hover{
+                   border: 1.5px solid rgb(134, 74, 74);
+                   border-radius: 1rem;
+                   cursor: pointer;
+               }
+               
+               &:visited{
+                border: 1.5px solid rgb(134, 74, 74);
+                border-radius: 1rem;
+               }
+         }
+
+        &--menu{
+            list-style: none; 
+            text-decoration: none; 
+           // padding: 0.8rem; 
+            display: block; 
+            color: white; 
+            align-self: start;
+            justify-self: start;
+           // border : 2px solid grey;
+              &::after{
+                content: "" ;
+               // border : 5px solid grey;
+              }
+
+            &:hover{
+               // background-color: rgb(134, 74, 74) ;
+            }
+        }
+
+    
+    }
 }
+
 .video__course
 {
     &--name{
@@ -42,4 +114,10 @@
 .video__container{
     padding-bottom: 5rem;
     background-color: rgb(121, 115, 115);
+}
+
+.active{
+    border: 1.5px solid rgb(255, 0, 0);
+    border-radius: 1rem;
+    background-color: red;
 }

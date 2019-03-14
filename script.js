@@ -1,3 +1,4 @@
+
 function openNav()
 {
 //document.querySelector('.responsive__nav').style.display = 'grid' ; 
@@ -69,13 +70,28 @@ document.addEventListener('keypress',function(event)
                                     
              $(document).ready(function(){
              $('.card__container').slick({
-             
+               
             slidesToShow: 4,
             slidesToScroll: 2 ,
             dots: true,
             arrows: true,
             //infinite: true,                
             focusOnSelect: true
+            
             });
+           
         });                      
-   
+                             ///////////////Working on the video page/////////////
+        function mainVid(id) {
+           
+            $('#video').html(`
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    `);
+                    
+        }
+        $('main').on('click', 'article', function () {
+           
+            var id = $(this).attr('data-key');
+            
+            mainVid(id);
+          });

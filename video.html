@@ -74,22 +74,35 @@
                 <img src="" alt="" class="menubar__logo">
            <!-- v=DmTXqhniL84&list=PLkWIEmwZeYzq7RiBdC3uMPVYgOD0qeyft -->
         </div>
-        <div class="video__container">
-            <div class="video__link"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?{%url%}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video__course--name">
-               {%course%}
-            </div>
-            <div class="video__course--trainer">
-                By {%trainer%}
-            </div>
-            <div class="video__course--catagories">
-               Difficulty : {%difficulty%} 
-               
+        <div class="video__grid">
+            <div class="video__container video__player">
+                <div class="video__link" id = "video"> 
+                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{%id%}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="video__course--name">
+                   {%course%}
+                </div>
+                <div class="video__course--trainer">
+                    By {%trainer%}
+                </div>
+                <div class="video__course--catagories">
+                   Difficulty : {%difficulty%} 
+                   
+                   
+                </div>
+    
             </div>
 
+            <div class="video__details">
+              <main>  {%rdata%} 
+                  
+              </main>  
+
+                
+            </div>
         </div>
+        
         
         <div class="footer footer__video">
            <div class="footer__container">
