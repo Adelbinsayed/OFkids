@@ -4,6 +4,8 @@ const url = require('url');
 const path = require('path');
 const exportv = require('./export');
 
+const port = process.env.PORT || 8080;
+
 const json = fs.readFileSync(`${__dirname}/data.json`,'utf-8');
 const videoLink = JSON.parse(json);
 //console.log(videoLink);
@@ -117,8 +119,8 @@ const server = http.createServer((req,res)=>{
     // res.writeHead(200,{'Content-type':'text/html'});
     // res.end('hi bro...wassup');
 });
-server.listen(8080,'127.0.0.1',()=>{
-    console.log('started listening')
+server.listen(port,()=>{
+    //console.log('started listening');
 });       
 
 // let playlistID = 'PLkWIEmwZeYzqOOkeVCcMqPWV8WPhIXNxt'
